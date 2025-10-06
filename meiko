@@ -1,0 +1,14 @@
+ // const imagePokemon = document.createElement("img");
+      // const spritePokemon = document.createElement("img");
+
+
+      // pokeId.textContent = pokemon.pokedexId;
+      // pTag_elem.textContent = pokemon.name;
+      // imagePokemon.setAttribute("src", pokemon.image);
+      // spritePokemon.setAttribute("src", pokemon.sprite);
+
+
+
+      // cardPokemon.appendChild(imagePokemon);
+      // cardPokemon.appendChild(spritePokemon);
+      // pokemonGrid.appendChild(cardPokemon);

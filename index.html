@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <div class="container">
+        <section class="left">
+            <div class="pokemon-container">
+                <p class="loading">En cours de chargement...</p>
+            </div>
+
+        </section>
+
+        <section class="right">
+            <div class="research">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Nom de pokemon">
+                <button onclick="searchText()">Sarch</button>
+                <div class="show-pokemon">
+                    <template id="pokemon-template">
+                        <div class="pokemon-card">
+                            <h3 class="pokemon-name"></h3>
+                            <img class="pokemon-img" src="" alt="">
+                        </div>
+                    </template>
+
+
+
+                </div>
+            </div>
+            <div class="right_pok">
+
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
