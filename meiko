@@ -12,3 +12,38 @@
       // cardPokemon.appendChild(imagePokemon);
       // cardPokemon.appendChild(spritePokemon);
       // pokemonGrid.appendChild(cardPokemon);
+
+//       const template = document.getElementById("pokemon-template");
+//     const pokemonGrid = document.querySelector(".pokemon-container");
+//     const imageSearch = document.querySelector(".right_pok");
+//     const searchBar = document.querySelector("#searchInput");
+//     const leftContainer = document.querySelector("")
+
+//     const serInput = searchBar.value.trim()
+
+//     allPokemons.forEach(pokemon => {
+
+//       // 1つのポケモンカードを作成
+//       const cardPokemon = document.createElement("div");
+//       cardPokemon.classList.add("pokemon-card");
+
+//       cardPokemon.innerHTML = `
+//       <span>#${pokemon.id}</span>
+//       <h3>${pokemon.name}</h3>
+//       <img src="${pokemon.sprite}" alt="${pokemon.name}">`;
+
+//       // グリッドに追加
+//       pokemonGrid.appendChild(cardPokemon);
+
+//       // cardPokemon.addEventListener("click", function () {
+      //   leftContainer.innerHTML = "";
+      //   const clone = template.content.cloneNode(true);
+      //   clone.querySelector(".pokemon-id").textContent = `#${pokemon.id}`;
+      //   clone.querySelector(".pokemon-img").src = pokemon.img;
+      //   clone.querySelector(".pokemon-name").textContent = pokemon.name;
+
+
+      //   leftContainer.appendChild(clone);
+      // })
+
+    })

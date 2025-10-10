@@ -1,25 +1,94 @@
-.container{
-    display: flex;
+* {
+  /* border: solid black 1px; */
+}
+
+body {
+  background-color: red;
 
 }
-.pokemon-container {
+
+main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 20px;
- 
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  padding: 10px
+}
+
+h1 {
+  text-align: center;
+}
+
+.pokemon-list {
+  font-size: 35px;
+  /* 灰色の箱 */
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  margin: left 10px;
+
+}
+
+.research {
+  display: flex;
+}
+
+.searchInput {
+  align-items: center;
+  width: 50%;
+  height: 30px;
+}
+
+.searchButton {
+  width: 20%;
+  height: 30px;
+  margin-left: 15%;
+}
+
+.evolution-list {
+  align-items: center;
+  font-size: 25px;
 }
 
 .pokemon-card {
-  border: 1px solid #ccc;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #444242;
   border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  background: white;
 }
-.left{
-    width: 50%;
+
+.right_pokemon {
+
+  align-items: center;
+
 }
-.right{
-flex-grow: 1;
+
+.right_pokemon img.pokemon-img {
+  width: 600px;
+  height: ;
+  border-radius: 10px;
+}
+
+.types {
+  align-items: center;
+}
+
+.evolution-sprite {
+  width: 120px;
+  height: ;
+  margin-right: 5px;
+}
+
+.evolutions {
+  border-radius: 10px;
+  background-color: #444242;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10%;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }

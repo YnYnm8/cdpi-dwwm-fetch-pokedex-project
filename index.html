@@ -10,37 +10,56 @@
 </head>
 
 <body>
-    <h1>Pokedex</h1>
-    <div class="container">
-        <section class="left">
-            <div class="pokemon-container">
-                <p class="loading">En cours de chargement...</p>
-            </div>
+    <h1>Bienvenu dans le Pokedex</h1>
+    <template class="template-pokemon">
+        <div class="pokemon-card">
+            <div class="id"></div>
+            <div class="name"></div>
+            <img class="sprite" src="" alt="">
+        </div>
+    </template>
+
+    <template class="template-details">
+        <div class="pokemon-detail-card"></div>
+        <h2 class="pokemon-id"></h2>
+        <img class="pokemon-img" src="" alt="">
+        <h2 class="pokemon-name"></h2>
+
+
+
+        <div class="types">
+            <h2>Types</h2>
+            <div class="type-list"></div>
+        </div>
+        <div class="evolutions">
+            <h2>Évolution</h2>
+            <div class="evolution-list"></div>
+        </div>
+
+    </template>
+
+    <main>
+
+        <section class="pokemon-list">
+            <p class="loading">En cours de chargement...</p>
 
         </section>
 
-        <section class="right">
+        <section class="pokemon-detail">
+
             <div class="research">
                 <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" placeholder="Nom de pokemon">
-                <button onclick="searchText()">Sarch</button>
-                <div class="show-pokemon">
-                    <template id="pokemon-template">
-                        <div class="pokemon-card">
-                            <h3 class="pokemon-name"></h3>
-                            <img class="pokemon-img" src="" alt="">
-                        </div>
-                    </template>
-
-
-
-                </div>
+                <input class="searchInput" type="text" id="searchInput" placeholder="Nom de pokemon">
+                <button class="searchButton">Search</button>
             </div>
-            <div class="right_pok">
+
+            <div class="right_pokemon">
 
             </div>
+
         </section>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 
