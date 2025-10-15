@@ -27,7 +27,7 @@ main {
   /* 枠線 */
   padding: 10px;
   box-sizing: border-box;
-  background-color: #eaeaea;
+  background-color:red;
   /* 背景を薄いグレーに */
   border-radius: 8px;
   /* 角丸 */
@@ -67,7 +67,7 @@ main {
 .pokemon-detail {
   width: 55%;
   /* 右側の幅 */
-  border: 1px solid #ccc;
+  border: 1px solid red;
   padding: 10px;
   box-sizing: border-box;
   height: 80vh;
@@ -76,7 +76,7 @@ main {
   /* 必要に応じてスクロール */
   border-radius: 8px;
   /* 角丸 */
-  background-color: #fff;
+  background-color:red;
   display: flex;
   /* フレックスコンテナにする */
   flex-direction: column;
@@ -86,9 +86,9 @@ main {
   text-align: center;
 }
 .evolutions {
-  border: 2px solid #ffcc00;       /* 枠線の色 */
+  border: 2px solid #413b;       /* 枠線の色 */
   border-radius: 10px;             /* 角を丸く */
-  background-color: #fff8e1;       /* 薄い黄色の背景 */
+  background-color: #645555;       /* 薄い黄色の背景 */
   padding: 10px;                   /* 内側の余白 */
   margin-top: 15px;                /* 上との間隔 */
   width: 90%;                      /* 横幅調整 */
