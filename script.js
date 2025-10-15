@@ -1,6 +1,7 @@
 
+
 function main() {
-  fetch("https://pokebuildapi.fr/api/v1/pokemon/limit/100")
+  fetch("https://pokebuildapi.fr/api/v1/pokemon")
     .then(response_obj => response_obj.json())
     .then(allPokemons => {
       printLeftPokemons(allPokemons);

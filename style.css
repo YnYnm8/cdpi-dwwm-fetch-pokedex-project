@@ -8,87 +8,117 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  padding: 10px
+  display: flex;
+  /* 左右に並べる */
+  gap: 20px;
+  /* 左右の間隔 */
+  padding: 20px;
 }
 
-h1 {
+/* 左側のポケモンリスト */
+.pokemon-list {
+  width: 40%;
+  /* 左側の幅 */
+  height: 80vh;
+  /* 高さを画面の80%に */
+  overflow-y: auto;
+  /* 縦スクロールを有効化 */
+  border: 1px solid #ccc;
+  /* 枠線 */
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  /* 背景を薄いグレーに */
+  border-radius: 8px;
+  /* 角丸 */
+}
+.pokemon-card .id,
+.pokemon-card .name {
+  font-size: 2rem;       /* 文字を少し大きく */
+  font-weight: bold;        /* 太字にする */
+}
+/* ポケモンカードをグレーの箱に */
+.pokemon-card {
+  display: flex;               /* 横並びにする */
+  align-items: center;         /* 縦方向中央揃え */
+  gap: 50px;                   /* 文字と画像の間隔 */
+  border: 1px solid #413b3b;  /* 枠線 */
+  border-radius: 8px;          /* 角を丸く */
+  padding: 10px;               /* 内側の余白 */
+  margin-bottom: 10px;         /* 下に間隔 */
+  background-color: #645555;   /* カードの背景色 */
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* 影で浮き上がる感じ */
+  transition: transform 0.2s;;
+}
+
+
+.pokemon-card:hover {
+  transform: scale(1.03);
+  /* ホバーで少し拡大 */
+}
+
+.pokemon-card img {
+  width: 80px;
+  height: 80px;
+}
+
+/* 右側の詳細表示 */
+.pokemon-detail {
+  width: 55%;
+  /* 右側の幅 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 80vh;
+  /* 左右で高さを揃える */
+  overflow-y: auto;
+  /* 必要に応じてスクロール */
+  border-radius: 8px;
+  /* 角丸 */
+  background-color: #fff;
+  display: flex;
+  /* フレックスコンテナにする */
+  flex-direction: column;
+  /* 上下方向に積む */
+  align-items: center;
+  /* 横方向中央揃え */
   text-align: center;
 }
-
-.pokemon-list {
-  font-size: 35px;
-  /* 灰色の箱 */
-  border-radius: 10px;
-  padding: 10px 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  box-sizing: border-box;
-  margin: left 10px;
-
-}
-
-.research {
-  display: flex;
-}
-
-.searchInput {
-  align-items: center;
-  width: 50%;
-  height: 30px;
-}
-
-.searchButton {
-  width: 20%;
-  height: 30px;
-  margin-left: 15%;
+.evolutions {
+  border: 2px solid #ffcc00;       /* 枠線の色 */
+  border-radius: 10px;             /* 角を丸く */
+  background-color: #fff8e1;       /* 薄い黄色の背景 */
+  padding: 10px;                   /* 内側の余白 */
+  margin-top: 15px;                /* 上との間隔 */
+  width: 90%;                      /* 横幅調整 */
+  text-align: center;              /* 中身を中央揃え */
 }
 
 .evolution-list {
-  align-items: center;
-  font-size: 25px;
+  display: flex;                   /* アイコンやテキストを横並び */
+  justify-content: center;         /* 中央揃え */
+  gap: 10px;                       /* アイコン間の間隔 */
+  flex-wrap: wrap;                 /* 多い場合は折り返す */
 }
 
-.pokemon-card {
-  margin: 15px;
+
+/* 検索フォーム */
+.research {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #444242;
-  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.right_pokemon {
+/* レスポンシブ対応（スマホで縦並び） */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
 
-  align-items: center;
-
-}
-
-.right_pokemon img.pokemon-img {
-  width: 600px;
-  height: ;
-  border-radius: 10px;
-}
-
-.types {
-  align-items: center;
-}
-
-.evolution-sprite {
-  width: 120px;
-  height: ;
-  margin-right: 5px;
-}
-
-.evolutions {
-  border-radius: 10px;
-  background-color: #444242;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10%;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  .pokemon-list,
+  .pokemon-detail {
+    width: 100%;
+    height: auto;
+  }
 }
