@@ -17,39 +17,57 @@ main {
 
 /* 左側のポケモンリスト */
 .pokemon-list {
+
+
   width: 40%;
   /* 左側の幅 */
   height: 80vh;
   /* 高さを画面の80%に */
   overflow-y: auto;
   /* 縦スクロールを有効化 */
-  border: 1px solid #ccc;
+  border: 1px solid red;
   /* 枠線 */
   padding: 10px;
   box-sizing: border-box;
-  background-color:red;
+  background-color: red;
   /* 背景を薄いグレーに */
   border-radius: 8px;
   /* 角丸 */
 }
+
 .pokemon-card .id,
 .pokemon-card .name {
-  font-size: 2rem;       /* 文字を少し大きく */
-  font-weight: bold;        /* 太字にする */
+  font-size: 2rem;
+  /* 文字を少し大きく */
+  font-weight: bold;
+  /* 太字にする */
 }
+
 /* ポケモンカードをグレーの箱に */
 .pokemon-card {
-  display: flex;               /* 横並びにする */
-  align-items: center;         /* 縦方向中央揃え */
-  gap: 50px;                   /* 文字と画像の間隔 */
-  border: 1px solid #413b3b;  /* 枠線 */
-  border-radius: 8px;          /* 角を丸く */
-  padding: 10px;               /* 内側の余白 */
-  margin-bottom: 10px;         /* 下に間隔 */
-  background-color: #645555;   /* カードの背景色 */
+
+  display: flex;
+  justify-content: space-between;
+  /* 横並びにする */
+  align-items: center;
+  /* 縦方向中央揃え */
+  gap: 50px;
+  /* 文字と画像の間隔 */
+  border: 1px solid #413b3b;
+  /* 枠線 */
+  border-radius: 8px;
+  /* 角を丸く */
+  padding: 10px;
+  /* 内側の余白 */
+  margin-bottom: 10px;
+  /* 下に間隔 */
+  background-color: #645555;
+  /* カードの背景色 */
   cursor: pointer;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* 影で浮き上がる感じ */
-  transition: transform 0.2s;;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  /* 影で浮き上がる感じ */
+  transition: transform 0.2s;
+  ;
 }
 
 
@@ -59,8 +77,9 @@ main {
 }
 
 .pokemon-card img {
-  width: 80px;
-  height: 80px;
+
+  height: 100px;
+  margin-left: 160px;
 }
 
 /* 右側の詳細表示 */
@@ -76,7 +95,7 @@ main {
   /* 必要に応じてスクロール */
   border-radius: 8px;
   /* 角丸 */
-  background-color:red;
+  background-color: red;
   display: flex;
   /* フレックスコンテナにする */
   flex-direction: column;
@@ -85,23 +104,39 @@ main {
   /* 横方向中央揃え */
   text-align: center;
 }
+
 .evolutions {
-  border: 2px solid #413b;       /* 枠線の色 */
-  border-radius: 10px;             /* 角を丸く */
-  background-color: #645555;       /* 薄い黄色の背景 */
-  padding: 10px;                   /* 内側の余白 */
-  margin-top: 15px;                /* 上との間隔 */
-  width: 90%;                      /* 横幅調整 */
-  text-align: center;              /* 中身を中央揃え */
+  border: 2px solid red;
+  /* 枠線の色 */
+  border-radius: 10px;
+  /* 角を丸く */
+  background-color: #645555;
+  /* 薄い黄色の背景 */
+  padding: 10px;
+  /* 内側の余白 */
+  margin-top: 15px;
+  /* 上との間隔 */
+  width: 111%;
+  /* 横幅調整 */
+  text-align: center;
+  /* 中身を中央揃え */
 }
 
 .evolution-list {
-  display: flex;                   /* アイコンやテキストを横並び */
-  justify-content: center;         /* 中央揃え */
-  gap: 10px;                       /* アイコン間の間隔 */
-  flex-wrap: wrap;                 /* 多い場合は折り返す */
+  display: flex;
+  /* アイコンやテキストを横並び */
+  justify-content: center;
+  /* 中央揃え */
+  gap: 10px;
+  /* アイコン間の間隔 */
+  flex-wrap: wrap;
+  /* 多い場合は折り返す */
+  font-size: 2rem;
 }
-
+.searchInput{
+  width: 222px;
+  height: 22px;
+}
 
 /* 検索フォーム */
 .research {
